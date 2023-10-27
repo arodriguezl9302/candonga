@@ -1,0 +1,47 @@
+import { BiTrendingUp, BiTrendingDown } from "react-icons/bi";
+
+const Home = () => {
+  return (
+    <div className="md:w-[768px] h-full bg-white rounded-sm shadow-2xl p-5 overflow-y-scroll scrollBarMod">
+      <div className="flex flex-col md:flex-row gap-1 pb-5 items-center">
+        <div className="md:w-1/3 w-full h-28 md:h-24 px-2 shadow-2xl md:shadow-none bg-white border-gray-300 space-y-1 text-center md:text-start border rounded-sm md:rounded-none mb-3 py-1 md:py-0 md:mb-0 md:border-r md:border-b-0 md:border-t-0 md:border-l-0">
+          <p className="text-xl font-light">Productos totales</p>
+          <p className="text-2xl font-medium">24</p>
+          <p className="text-sm font-light flex items-center gap-2 justify-center md:justify-start">
+            <span className="text-[#0047BA] font-medium">Invertido</span>{" "}
+            <span className="text-lg text-gray-400">$215644678.00</span>
+          </p>
+        </div>
+        <div className="md:w-2/5 w-full h-28 md:h-24 px-2 shadow-2xl md:shadow-none bg-white border-gray-300 space-y-1 text-center md:text-start border rounded-sm md:rounded-none mb-3 py-1 md:py-0 md:mb-0 md:border-r md:border-b-0 md:border-t-0 md:border-l-0">
+          <p className="text-xl font-light">Dinero en caja (hoy)</p>
+          <div className="flex gap-3 items-center justify-center md:justify-start">
+            <p className="text-2xl font-medium">$5643370.00</p>
+            <div className="rounded-full bg-green-400 px-3 py-1 text-sm flex gap-2 items-center text-white">
+              <p>14%</p> <BiTrendingUp size={24} color="green" />
+            </div>
+          </div>
+          <p className="text-sm font-light flex items-center gap-2 justify-center md:justify-start">
+            <span className="text-[#0047BA] font-medium">
+              Usuario mas ingresos:
+            </span>{" "}
+            <span className="text-lg text-gray-400">Raiber</span>
+          </p>
+        </div>
+        <div className="md:w-1/3 w-full h-28 md:h-24 px-2 shadow-2xl md:shadow-none bg-white border-gray-300 space-y-1 text-center md:text-start border rounded-sm mb-3 py-1 md:py-0 md:mb-0 md:border-b-0 md:border-t-0 md:border-l-0 md:border-r-0">
+          <p className="text-xl font-light">Dinero en caja (mes)</p>
+          <div className="flex gap-3 items-center justify-center md:justify-start">
+            <p className="text-2xl font-medium">$4344680.00</p>
+            <div className="rounded-full bg-red-400 px-3 py-1  text-sm flex gap-2 items-center text-white">
+              <p>3%</p> <BiTrendingDown size={24} color="red" />
+            </div>
+          </div>
+          <p className="text-sm font-light">
+            <span className="text-[#0047BA] font-medium">Agosto</span>{" "}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
